@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .logbook-form {
+  background-color: #2181da;
+  max-width: 600px;
+  flex: 1;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body .logbook-form .form-header {
+  border-bottom: 1px solid #cccccc;
+  padding: 15px 0;
+}
+body .logbook-form .form-header h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+body .logbook-form .form-header p {
+  text-align: center;
+  color: #fff;
+}
+body .logbook-form .form-body {
+  background: #130f40;
+  padding: 5px 10px;
+}
+body .logbook-form .form-body .row {
+  display: flex;
+}
+body .logbook-form .form-body .row .input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+}
+body .logbook-form .form-body .row .input-group label {
+  color: #fff;
+  font-size: 17px;
+}
+body .logbook-form .form-body .row .input-group input[type=text], body .logbook-form .form-body .row .input-group input[type=email], body .logbook-form .form-body .row .input-group input[type=date], body .logbook-form .form-body .row .input-group input[type=tel], body .logbook-form .form-body .row .input-group textarea, body .logbook-form .form-body .row .input-group select {
+  width: 100%;
+  font-size: 18px;
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+}
+body .logbook-form .form-body .row .input-group textarea {
+  resize: none;
+  height: 100px;
+}
+body .logbook-form .form-body .row .input-group input[type=date]:hover {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  body .logbook-form .form-body .row {
+    flex-direction: column;
+  }
+}
+body .logbook-form .form-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+body .logbook-form .form-footer .btn-view {
+  padding: 10px 20px;
+  background-color: #1844bd;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 0.4s linear;
+  text-decoration: none;
+  color: #fff;
+}
+body .logbook-form .form-footer .btn-view:hover {
+  padding: 12px 22px;
+  font-size: 18px;
+}
+body .logbook-form .form-footer .btn-logout {
+  padding: 10px 20px;
+  background-color: #c7251f;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 0.4s linear;
+  text-decoration: none;
+  color: #fff;
+}
+body .logbook-form .form-footer .btn-logout:hover {
+  padding: 12px 22px;
+  font-size: 18px;
+}
+body .logbook-form .form-footer .btn {
+  padding: 10px 20px;
+  background-color: #1fc73b;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 0.4s linear;
+}
+body .logbook-form .form-footer .btn:hover {
+  padding: 12px 22px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  body .logbook-form .form-footer .btn, body .logbook-form .form-footer .btn-logout {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=logbookform.css.map */
