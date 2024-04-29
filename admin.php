@@ -12,10 +12,10 @@ if (!isset($_SESSION['username'])) {
 }
 
 // Check if the logged-in user is not an admin, redirect to index.php
-if ($_SESSION['priority'] !== 'admin') {
-    header("Location: index.php");
-    exit();
-}
+// if ($_SESSION['priority'] !== 'admin') {
+//     header("Location: index.php");
+//     exit();
+// }
 
 
 
