@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+   
+
+    .logbook-form{
+        background-color: #2181da;
+        max-width: 600px;
+        flex: 1;
+        border-radius: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .form-header{
+            border-bottom: 1px solid #cccccc;
+            padding: 15px 0;
+
+            h1{
+                text-align: center;
+                font-size: 28px;
+                color: #fff;
+            }
+            p{
+                text-align: center;
+                color: #fff;
+
+            }
+        }
+
+        .form-body{
+            background: #130f40;
+            padding: 5px 10px;
+
+            .row{
+                display: flex;
+                .input-group{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px 5px;
+
+                    label{
+                        color: #fff;//#1b72ba
+                        font-size: 17px;
+                    }
+                    input[type="text"],input[type="email"],input[type="date"],input[type="tel"] ,textarea,select{
+                        width: 100%;
+                        font-size: 18px;
+                        height: 34px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        color: #666;
+                        border: 1px solid #d6d6d6;
+                        border-radius: 4px;
+                        background: #fff;
+                        outline: none;
+                    }
+
+                    textarea{
+                        resize: none;
+                        height: 100px;
+                    }
+
+                    input[type="date"]:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            @media (max-width: 600px) {
+                .row{
+                   flex-direction: column;
+                }
+           }
+
+        }
+
+        .form-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 15px;
+            flex-wrap: wrap;
+
+            .btn-view{
+                padding: 10px 20px; 
+                background-color: #1844bd;
+                font-size: 17px;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                border: 1px solid #fff; 
+                transition: .4s linear;
+                text-decoration: none;
+                color: #fff;
+
+
+                &:hover{
+                    padding: 12px 22px;
+                    font-size: 18px;
+                }
+            }
+
+
+            .btn-logout{
+                padding: 10px 20px; 
+                background-color: #c7251f;
+                font-size: 17px;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                border: 1px solid #fff; 
+                transition: .4s linear;
+                text-decoration: none;
+                color: #fff;
+
+
+                &:hover{
+                    padding: 12px 22px;
+                    font-size: 18px;
+                }
+            }
+
+            .btn{
+                padding: 10px 20px; 
+                background-color: #1fc73b;
+                font-size: 17px;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                border: 1px solid #fff; 
+                transition: .4s linear;
+
+                &:hover{
+                    padding: 12px 22px;
+                    font-size: 18px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                   .btn,.btn-logout{
+                    flex-wrap: wrap;
+                   }
+                }
+            }
+        }
+    }
+
+    
